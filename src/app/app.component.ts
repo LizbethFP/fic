@@ -11,6 +11,7 @@ export class AppComponent {
   hobbies : Array<string>;
   // hobbies : string[];
   showHobbies : boolean;
+  newUpdate: string;
 
   constructor() {
     console.log('Constructor works!');
@@ -18,6 +19,7 @@ export class AppComponent {
     this.email = 'lizbeth.fp@gmail.com';
     this.hobbies = ['read', 'write', 'watch tv'];
     this.showHobbies = false;
+    this.newUpdate = 'Go figure if this works';
   }
 
   toggleHobbies() {
