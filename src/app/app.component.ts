@@ -12,6 +12,7 @@ export class AppComponent {
   // hobbies : string[];
   showHobbies : boolean;
   newUpdate: string;
+  explanationToUpdate: string;
 
   constructor() {
     console.log('Constructor works!');
@@ -20,6 +21,7 @@ export class AppComponent {
     this.hobbies = ['read', 'write', 'watch tv'];
     this.showHobbies = false;
     this.newUpdate = 'Go figure if this works';
+    this.explanationToUpdate = 'aparently I have to make changes, commit and run the prod code in order to update project';
   }
 
   toggleHobbies() {
