@@ -1,0 +1,14 @@
+:root {
+  --color1: #e0aa00;
+}
+
+
+.yellow-bck {
+  /* background-color: var(--color1)!important; */
+  background-color: #e0aa00;
+}
+
+.small-component {
+  background: #333;
+  color: white;
+}

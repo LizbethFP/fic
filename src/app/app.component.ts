@@ -6,5 +6,28 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title : string;
+  email : string;
+  hobbies : Array<string>;
+  // hobbies : string[];
+  showHobbies : boolean;
+
+  constructor() {
+    console.log('Constructor works!');
+    this.title = 'my first try to code on Angular';
+    this.email = 'lizbeth.fp@gmail.com';
+    this.hobbies = ['read', 'write', 'watch tv'];
+    this.showHobbies = false;
+  }
+
+  toggleHobbies() {
+    this.showHobbies = !this.showHobbies;
+  }
+
+  newHobby(hobby) {
+    // console.log(hobby.value);
+    this.hobbies.push(hobby.value);
+    hobby.value = '';
+    return false;
+  }
 }
